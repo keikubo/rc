@@ -1,0 +1,5 @@
+[user]
+	name = Kei Kubo
+	email = keikubo@gmail.com
+[core]
+	excludesfile = /home/keikubo/.gitignore
