@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/keikubo/Codes/rackhub/rackhub/confs'
+let g:netrw_dirhist_2='/Users/keikubo/Codes/rackhub/rackhub'
+let g:netrw_dirhist_3='/Users/keikubo/Codes/rackhub/rackhub_app_modules/haproxy/config'

@@ -131,7 +131,7 @@ endif
 " コマンドライン補完するときに強化されたものを使う(参照 :help wildmenu)
 " set wildmenu
 " コマンドライン補間をシェルっぽく
-set wildmode=list:longest
+set wildmode=list,longest,full
 " バッファが編集中でもその他のファイルを開けるように
 set hidden
 " 外部のエディタで編集中のファイルが変更されたら自動で読み直す
@@ -401,14 +401,14 @@ nnoremap <silent> ,qd :call UnQuote()<CR>
 
 
 " 現在行をhighlight
-" set updatetime=1
+"set updatetime=1
 " autocmd CursorHold * :match Search /^.*\%#.*$
 
 " code2html
 let html_use_css = 1
 
 " ペースト時にautoindentを無効に
-"set paste
+set paste
 
 " SeeTab
 let g:SeeTabCtermFG="black"
@@ -509,3 +509,7 @@ set noswapfile
 
 let python_highlight_all = 1
 
+"set wildmenu
+map <silent> sy :call YanktmpYank()<CR>
+map <silent> sp :call YanktmpPaste_p()<CR>
+map <silent> sP :call YanktmpPaste_P()<CR>
