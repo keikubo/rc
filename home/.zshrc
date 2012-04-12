@@ -209,27 +209,10 @@ function chpwd() {
 
 export LS_COLORS='di=01;33'
 
-export PATH=$PATH:/usr/local/bin/
-export JAVA_HOME=/usr/lib/jvm/java-1.5.0-sun 
-export EC2_HOME=$HOME/amazonaws/ec2
-export EC2_PRIVATE_KEY=$HOME/amazonaws/ec2/key/pk-PX66WEANTY2JHN4TSKSFJSEWRUVVHSFB.pem
-export EC2_CERT=$HOME/amazonaws/ec2/key/cert-PX66WEANTY2JHN4TSKSFJSEWRUVVHSFB.pem 
-export AWS_AUTO_SCALING_HOME=$HOME/amazonaws/as
-export AWS_ELB_HOME=$HOME/amazonaws/elb
-export PATH=$PATH:$JAVA_HOME/bin:$EC2_HOME/bin:$AWS_AUTO_SCALING_HOME/bin:$AWS_ELB_HOME/bin
-
-
-if [[ -s $HOME/.rvm/scripts/rvm ]] ; then source $HOME/.rvm/scripts/rvm ; fi
 zstyle ':completion:*:default' menu select=1
 
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
-
-[[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
-
-VIRTUALENVWRAPPER_PYTHON=py2.7.2
-export WORKON_HOME=$HOME/.virtualenvs
-source virtualenvwrapper.sh
 
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' formats '(%s)-[%b]'
