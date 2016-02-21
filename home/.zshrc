@@ -223,3 +223,7 @@ precmd () {
    [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
 }
 RPROMPT="%1(v|%F{green}%1v%f|) [%*]"
+
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
