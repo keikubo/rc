@@ -1,5 +1,5 @@
 ## エスケープキーの設定
-escape ^Tt
+escape ^Ee
 
 ## ビジュアルベルを無効
 vbell off
